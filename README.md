@@ -1,6 +1,6 @@
 # 🔊 Urban Sound Classifier
 
-Dự án phân loại âm thanh đô thị sử dụng mô hình **CNN (Convolutional Neural Network)** được xây dựng bằng **PyTorch**. Mô hình nhận đầu vào là file âm thanh và phân loại thành **10 lớp** âm thanh môi trường đô thị dựa trên bộ dữ liệu [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html).
+Dự án phân loại âm thanh đô thị sử dụng mô hình **CNN (Convolutional Neural Network)** được xây dựng bằng **PyTorch**. Mô hình nhận đầu vào là file âm thanh và phân loại thành **10 lớp** âm thanh môi trường đô thị dựa trên bộ dữ liệu [UrbanSound8K](https://www.kaggle.com/datasets/chrisfilo/urbansound8k).
 
 Dự án bao gồm toàn bộ pipeline từ tiền xử lý dữ liệu, trích xuất đặc trưng, huấn luyện, đánh giá mô hình, đến một **Web Demo** cho phép người dùng tải lên file âm thanh và nhận kết quả phân loại trực tiếp trên trình duyệt.
 
@@ -137,7 +137,7 @@ pip install -r requirements.txt
 
 ### 3. Chuẩn bị dữ liệu
 
-Tải bộ dữ liệu [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html) và giải nén vào thư mục:
+Tải bộ dữ liệu [UrbanSound8K](https://www.kaggle.com/datasets/chrisfilo/urbansound8k) và giải nén vào thư mục:
 
 ```
 sound-classification/data/raw/
