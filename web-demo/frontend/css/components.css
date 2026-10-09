@@ -1,0 +1,70 @@
+.wobbly-1 { border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; }
+.wobbly-2 { border-radius: 15px 255px 15px 225px / 255px 15px 225px 15px; }
+.wobbly-3 { border-radius: 225px 15px 255px 15px / 15px 225px 15px 255px; }
+.wobbly-4 { border-radius: 15px 225px 15px 255px / 255px 15px 255px 15px; }
+.wobbly-circle { border-radius: 45% 55% 43% 57% / 55% 45% 52% 48%; }
+
+.card-sketch {
+  box-shadow: 6px 6px 0px 0px var(--color-ink);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+}
+.card-sketch:hover {
+  transform: rotate(-0.5deg) translateY(-2px);
+  box-shadow: 8px 8px 0px 0px var(--color-ink);
+}
+.card-sketch:nth-child(even):hover {
+  transform: rotate(0.5deg) translateY(-2px);
+}
+
+.btn-sketch {
+  border: 3px solid var(--color-ink);
+  background-color: white;
+  color: var(--color-ink);
+  box-shadow: 5px 5px 0px 0px var(--color-ink);
+  transition: all 150ms ease;
+  border-radius: 10px 25px 15px 20px / 20px 10px 25px 15px;
+}
+.btn-sketch:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0px 0px var(--color-ink);
+}
+.btn-sketch:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0px 0px 0px 0px var(--color-ink);
+}
+
+.btn-primary {
+  border: 3px solid var(--color-ink);
+  background-color: white;
+  color: var(--color-primary);
+  box-shadow: 6px 6px 0px 0px var(--color-ink);
+  transition: all 150ms ease;
+  border-radius: 15px 20px 10px 25px / 25px 15px 20px 10px;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0px 0px var(--color-ink);
+}
+.btn-primary:hover svg {
+  stroke: white;
+}
+.btn-primary:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px 0px 0px var(--color-ink);
+}
+
+.tape-strip {
+  position: absolute;
+  width: 90px;
+  height: 28px;
+  background-color: var(--color-muted);
+  border-left: 2px solid rgba(45, 45, 45, 0.4);
+  border-right: 2px solid rgba(45, 45, 45, 0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  opacity: 0.95;
+}

@@ -1,0 +1,8 @@
+archive.zip
+.vscode/
+weights.pth
+__pycache__/
+data
+models
+logs
+notebooks

@@ -1,0 +1,10 @@
+:root {
+  --color-paper: #fdfbf7;
+  --color-ink: #2d2d2d;
+  --color-muted: #e5e0d8;
+  --color-primary: #ff4d4d;
+  --color-secondary: #2d5da1;
+
+  --font-heading: 'Kalam', cursive;
+  --font-body: 'Patrick Hand', cursive;
+}
