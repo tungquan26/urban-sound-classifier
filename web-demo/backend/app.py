@@ -3,6 +3,7 @@ import shutil
 import tempfile
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import torch
 import torch.nn.functional as F
 
@@ -54,3 +55,6 @@ async def predict_audio(file: UploadFile = File(...)):
     finally:
         if os.path.exists(temp_path):
             os.remove(temp_path)
+
+frontend_path = os.path.join(os.path.dirname(__file__), "../frontend")
+app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
